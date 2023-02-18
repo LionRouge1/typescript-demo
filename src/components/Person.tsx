@@ -5,7 +5,6 @@ type PersonProps = {
     }
 }
 
-export const Person = (props:PersonProps) => {
-    const {name} = props
+export const Person = ({ name }: PersonProps) => {
     return <div>{name.first} {name.last}</div>
 }

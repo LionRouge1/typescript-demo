@@ -2,10 +2,9 @@ type StatusProps = {
     status: 'loading' | 'success' | 'error'
 }
 
-export const Status = (props:StatusProps) => {
+export const Status = ({ status }: StatusProps) => {
     let message;
-    const {status} = props
-    switch(status) {
+    switch (status) {
         case 'loading':
             message = 'Loading...';
             break;

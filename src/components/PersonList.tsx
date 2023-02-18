@@ -5,8 +5,7 @@ type PersonListPropos = {
     }[]
 }
 
-export const PersonList = (props:PersonListPropos) => {
-    const {names} = props
+export const PersonList = ({ names }: PersonListPropos) => {
     return (
         <div>
             {
